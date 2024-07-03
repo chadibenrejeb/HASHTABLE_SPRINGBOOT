@@ -20,8 +20,8 @@ public class HashTableController {
         service.addKey(key);
     }
 
-    @DeleteMapping("/remove")
-    public void removeKey(@RequestBody String key) {
+    @DeleteMapping("/remove/{key}")
+    public void removeKey(@PathVariable String key) {
         service.removeKey(key);
     }
 
